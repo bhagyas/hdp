@@ -5,7 +5,7 @@ The High Level Reference Architecture consists of the following:
 2. **SOLR** - acting as the system of record for the the metadata and providing the indexing and searching capabilities.
 3. When a user queries  for a content via metadata, we will use Solr to query the index. The  solr query will return a unique hbase row key which will be used to quickly retrieve the image from Hbase. 
 3. **Kafka** - Documents will be pushed to Kafka for Streaming, Batch and B2B integration
-4. **Spring Data Solr ** - Set of scripts to setup the cluster
+4. **Spring Data Solr** - Set of scripts to setup the cluster
 5. **Spring Data Solr** - Provides abstraction on top of Solr 
 6. **Spring HBase** - Provides an abstraction on top of HBase
 7. **Spring MVC** - Provides a REST interface to expose DocumentStore and IndexStore services
